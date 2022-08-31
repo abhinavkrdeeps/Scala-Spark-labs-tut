@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "Person",
+  "fields": [
+    {"name":  "username", "type": "string"},
+    {"name":  "favouriteNumber",
+      "type": ["null", "long"],
+      "default": null
+    },
+    {"name":  "interests", "type": {"type":  "array", "items":  "string"}}
+  ]
+}
